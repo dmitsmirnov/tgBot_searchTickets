@@ -35,13 +35,13 @@ final class DefaultBotHandlers {
             
             //for x in 6...9 {
             
-            // 3-10 min
+            // 3-6 min
             let randomTime = Int.random(in: 180...360)
             sleep(UInt32(randomTime))
             
-            let randomDate = Int.random(in: 5...10)
+            let randomDate = Int.random(in: 5...9)
             
-            let date: String = String(randomDate) + ".08.2022"
+            let date: String = "0" + String(randomDate) + ".08.2022"
             
             let siteGrandTrain: String = "https://grandtrain.ru/tickets/2078750-2004000/\(date)/"
             let myUrlString: String = "https://poezd.ru/nalichie-mest/Sevastopol/Sankt-Peterburg/?SearchForm[dateTo]=\(date)"
@@ -53,7 +53,8 @@ final class DefaultBotHandlers {
                 let doc = try SwiftSoup.parse(myHTMLString)
                 
                 let check = try doc.getElementsByClass("poezd-routes-item-left-number").text()
-                
+                let time = NSDate()
+                print("check \(date) \(time)")
                 if check != "" {
                     
                     let options = try doc.getElementsByClass("poezd-routes").array()
