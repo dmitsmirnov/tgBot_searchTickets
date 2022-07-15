@@ -35,16 +35,21 @@ final class DefaultBotHandlers {
             
             //for x in 6...9 {
             
-            // 3-6 min
-            let randomTime = Int.random(in: 180...360)
+            // 3-7 min
+            let randomTime = Int.random(in: 180...420)
             sleep(UInt32(randomTime))
             
-            let randomDate = Int.random(in: 5...9)
+            let randomDate = Int.random(in: 26...28)
             
-            let date: String = "0" + String(randomDate) + ".08.2022"
+            var StrDate = String(randomDate)
+            if StrDate.count == 1 {
+                StrDate = "0" + StrDate
+            }
             
-            let siteGrandTrain: String = "https://grandtrain.ru/tickets/2078750-2004000/\(date)/"
-            let myUrlString: String = "https://poezd.ru/nalichie-mest/Sevastopol/Sankt-Peterburg/?SearchForm[dateTo]=\(date)"
+            let date: String = StrDate + ".07.2022"
+            
+            let siteGrandTrain: String = "https://grandtrain.ru/tickets/2004000-2078750/\(date)/"
+            let myUrlString: String = "https://poezd.ru/nalichie-mest/Sankt-Peterburg/Sevastopol/?SearchForm[dateTo]=\(date)"
             let myURL = URL(string: myUrlString)
             
             
