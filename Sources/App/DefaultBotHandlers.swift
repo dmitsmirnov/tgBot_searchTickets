@@ -74,17 +74,18 @@ final class DefaultBotHandlers {
         // 028Ч  Таврия мос-сим
         
         //var task1 = Task(id: 1, from: "Sankt-Peterburg", to: "Kostroma(2010090)", range0: 30, range1: 30, date: ".07.2023", description: "for Irina and Anton", numberPoezd: "", countTickets: 1, typeVagon: "")
+        var task1 = Task(id: 1, from: "Sankt-Peterburg", to: "Sevastopol", range0: 10, range1: 14, date: ".07.2025", description: "for me Sevastopol", numberPoezd: "", countTickets: 3, typeVagon: "Плац")
+        var task2 = Task(id: 2, from: "Sankt-Peterburg", to: "Evpatoriya-Kurort", range0: 10, range1: 14, date: ".07.2025", description: "for me Evpatoriya", numberPoezd: "", countTickets: 3, typeVagon: "Плац")
         //var task2 = Task(id: 2, from: "Simferopol", to: "Sankt-Peterburg", range0: 24, range1: 28, date: ".08.2023", description: "for alex", numberPoezd: "", countTickets: 3, typeVagon: "Плац")
         //var task3 = Task(id: 3, from: "Adler", to: "Simferopol", range0: 19, range1: 20, date: ".07.2023", description: "for Tanya", numberPoezd: "", countTickets: 1, typeVagon: "Плац")
         //var task4 = Task(id: 4, from: "Simferopol", to: "Sankt-Peterburg", range0: 1, range1: 2, date: ".08.2023", description: "for Tanya", numberPoezd: "", countTickets: 1, typeVagon: "Плац")
         
-        
-        
+     
         //var task2 = Task(id: 2, from: "Novorossiysk", to: "Voronej", range0: 27, range1: 27, date: ".08.2023", description: "for margarita", numberPoezd: "", countTickets: 1, typeVagon: "")
         
         //var task3 = Task(id: 3, from: "Sankt-Peterburg", to: "Sevastopol", range0: 28, range1: 30, date: ".07.2023", description: "for sister", numberPoezd: "", countTickets: 1, typeVagon: "Плац")
         
-        var task4 = Task(id: 4, from: "Rostov", to: "Gagra", range0: 8, range1: 8, date: ".08.2023", description: "for Valery", numberPoezd: "", countTickets: 1, typeVagon: "")
+        //var task4 = Task(id: 4, from: "Rostov", to: "Gagra", range0: 8, range1: 8, date: ".08.2023", description: "for Valery", numberPoezd: "", countTickets: 1, typeVagon: "")
         
         //let task4 = Task(id: 4, from: "Evpatoriya-Kurort", to: "Sankt-Peterburg", range0: 28, range1: 30, date: ".09.2022")
         
@@ -93,7 +94,8 @@ final class DefaultBotHandlers {
         //tasks.append(task1)
         //tasks.append(task2)
         //tasks.append(task3)
-        tasks.append(task4)
+        tasks.append(task1)
+        tasks.append(task2)
         //tasks.append(task4)
         //tasks.append(task5)
         //tasks.append(task6)
